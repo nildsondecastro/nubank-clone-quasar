@@ -29,7 +29,57 @@
           <div class="div-green"></div>
         </q-card-actions>
       </q-card-section>
+
+      <div class="bottom-container row items-center justify-between q-pa-sm q-mb-md q-mx-sm">
+        <q-icon name="fastfood" size="25px" />
+        <span class="q-mx-sm">
+          Compra mais recente em padaria Av1 no valor de R$ 84,00 hoje
+        </span>
+        <q-icon name="keyboard_arrow_down" size="20px" />
+      </div>
     </q-card>
+
+    <q-scroll-area horizontal class="q-ml-md q-my-md">
+      <div class="row no-wrap">
+
+        <q-card class="card-items column justify-between q-ml-sm">
+          <q-card-section>
+            <q-icon name="person_add" size="35px" />
+          </q-card-section>
+          <q-card-section class="q-pt-none">
+            <strong>Indicar Amigos</strong>
+          </q-card-section>
+        </q-card>
+
+        <q-card class="card-items column justify-between q-ml-sm">
+          <q-card-section>
+            <q-icon name="monetization_on" size="35px" />
+          </q-card-section>
+          <q-card-section class="q-pt-none">
+            <strong>Depositar</strong>
+          </q-card-section>
+        </q-card>
+
+        <q-card class="card-items column justify-between q-ml-sm">
+          <q-card-section>
+            <q-icon name="request_quote" size="35px" />
+          </q-card-section>
+          <q-card-section class="q-pt-none">
+            <strong>Transferir</strong>
+          </q-card-section>
+        </q-card>
+
+        <q-card class="card-items column justify-between q-ml-sm">
+          <q-card-section>
+            <q-icon name="receipt" size="35px" />
+          </q-card-section>
+          <q-card-section class="q-pt-none">
+            <strong>Pagar Boleto</strong>
+          </q-card-section>
+        </q-card>
+        
+      </div>
+    </q-scroll-area>
 
   </q-page>
 </template>
@@ -99,5 +149,25 @@ export default defineComponent({
   background-color: $green;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.bottom-container {
+  .q-icon {
+    color: $gray;
+  }
+  span {
+    color: $gray;
+    width: 75%
+  }
+}
+.card-items {
+  height: 140px;
+  width: 115px;
+  background-color: $darkPurple;
+  color: $white;
+  cursor: pointer;
+}
+.q-scrollarea {
+  width: 95%;
+  height: 145px;
 }
 </style>
