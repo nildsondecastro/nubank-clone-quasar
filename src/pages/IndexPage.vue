@@ -4,6 +4,7 @@
       <q-img src="../assets/logo-white.png" width="55px" />
       <strong>Nildson</strong>
     </div>
+    <q-icon name="keyboard_arrow_down" size="28px" class="q-icon-arrow" />
   </q-page>
 </template>
 
@@ -19,8 +20,11 @@ export default defineComponent({
 .container-logo {
   width: 40%;
   strong {
-    color: #ffe8ff;
+    color: $white;
     font-size: 22px;
   }
+}
+.q-icon-arrow {
+  color: $white;
 }
 </style>

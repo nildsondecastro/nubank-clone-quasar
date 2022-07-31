@@ -17,6 +17,6 @@ export default {
 
 <style lang="scss">
 .q-layout {
-  background-color: #82269e;
+  background-color: $purple;
 }
 </style>
