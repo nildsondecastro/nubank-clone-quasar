@@ -1,10 +1,9 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+  <q-page class="column justify-center items-center">
+    <div class="row items-center justify-around q-mt-xl container-logo">
+      <q-img src="../assets/logo-white.png" width="55px" />
+      <strong>Nildson</strong>
+    </div>
   </q-page>
 </template>
 
@@ -15,3 +14,13 @@ export default defineComponent({
   name: 'IndexPage'
 })
 </script>
+
+<style lang="scss">
+.container-logo {
+  width: 40%;
+  strong {
+    color: #ffe8ff;
+    font-size: 22px;
+  }
+}
+</style>
