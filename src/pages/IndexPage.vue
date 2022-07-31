@@ -7,7 +7,7 @@
     <q-icon name="keyboard_arrow_down" size="28px" class="q-icon-arrow" />
 
     <q-card class="my-card q-ma-lg" flat bordered>
-      <q-icard-section class="q-pa-lg">
+      <q-card-section horizontal class="q-pa-lg">
         <div class="container-card">
           <q-icon name="payment" size="35px" class="q-icon-card" />
           <div class="info-container q-mt-xl">
@@ -22,7 +22,13 @@
 
           </div>
         </div>
-      </q-icard-section>
+
+        <q-card-actions vertical class="column justify-center">
+          <div class="div-orange"></div>
+          <div class="div-blue"></div>
+          <div class="div-green"></div>
+        </q-card-actions>
+      </q-card-section>
     </q-card>
 
   </q-page>
@@ -73,5 +79,25 @@ export default defineComponent({
   strong {
     color: $green;
   }
+}
+
+.div-orange {
+  height: 30px;
+  width: 7px;
+  background-color: $orange;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.div-blue {
+  height: 70px;
+  width: 8px;
+  background-color: $blue;
+}
+.div-green {
+  height: 105px;
+  width: 7px;
+  background-color: $green;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 </style>
